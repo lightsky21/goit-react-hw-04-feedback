@@ -5,6 +5,10 @@ import FeedbackOptions from './Widget/FeedbackOptions';
 import Section from './Widget/Section';
 import Notification from './Widget/Notification'
 
+
+const OPTIONS_GOOD = 'good';
+const OPTIONS_NEUTRAL = 'neutral';
+const OPTIONS_BAD = 'bad';
 export const  App = () => {
   // state = {
   //   good: 0,
@@ -26,13 +30,13 @@ export const  App = () => {
     //   };
     // });
     switch (name) {
-      case 'good':
+      case OPTIONS_GOOD:
         setGood(prevState => prevState + 1)
         break;
-      case 'neutral':
+      case OPTIONS_NEUTRAL:
         setNeutral(prevState => prevState + 1)
         break;
-      case 'bad':
+      case OPTIONS_BAD:
         setBad(prevState => prevState + 1)
         break;
 
