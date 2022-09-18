@@ -10,11 +10,7 @@ const OPTIONS_GOOD = 'good';
 const OPTIONS_NEUTRAL = 'neutral';
 const OPTIONS_BAD = 'bad';
 export const  App = () => {
-  // state = {
-  //   good: 0,
-  //   neutral: 0,
-  //   bad: 0,
-  // };
+  
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
@@ -23,12 +19,7 @@ export const  App = () => {
   
   const handleClick = e => {
     const { name } = e.currentTarget;
-    // this.setState(prevState => {
-      
-    //   return {
-    //     [name]: prevState[name] + 1,
-    //   };
-    // });
+    
     switch (name) {
       case OPTIONS_GOOD:
         setGood(prevState => prevState + 1)
@@ -63,7 +54,7 @@ export const  App = () => {
 
 
    
-    // const { good, neutral, bad } = this.state;
+    
     const total = countTotalFeedback();
   
    
